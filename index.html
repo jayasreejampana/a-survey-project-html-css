@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Survey-Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/survey.css">
+  </head>
+  <body>
+    <h1 id="title">SUV Model Purchase</h1>
+    <p id="description">Fill in the details to place your order</p>
+    <form id="survey-form" class="" action="index.html" method="post">
+      <div class="form-elements">
+      <label for="name" id="name-label">NAME: </label>
+      <input type="text" id="name"  placeholder="Enter your name" class="form-inputs" required /><br>
+      <label for="email" id="email-label">EMAIL: </label>
+      <input type="email" name="email"  placeholder="jane_doe@email.com" class="form-inputs" required /><br>
+      <label for="number" id="number-label">Age: </label>
+      <input type="number" name="number" min="18" max="75" placeholder="18" class="form-inputs" required /><br>
+      <label for="dropdown" id="model">Model</label>
+      <select id="dropdown" class="form-inputs">
+        <option value="model1">Model 1</option>
+        <option value="model2">Model 2</option>
+        <option value="model3">Model 3</option>
+        <option value="model4">Model 4</option>
+        <option value="model5">Model 5</option>
+      </select><br>
+      <label for="model-color" id="model-color"><strong>Model color</strong></label><br>
+      <input type="radio" name="color" id="model-color" value="black">
+      <label for="model-color">Black</label><br>
+      <input type="radio" name="color" id="model-color" value="green">
+      <label for="model-color">Green</label><br>
+      <input type="radio" name="color" id="model-color" value="orange">
+      <label for="model-color">Orange</label><br>
+      <input type="radio" name="color" id="model-color" value="yellow">
+      <label for="model-color">Yellow</label><br>
+
+      <label for="features"><strong>Add Features</strong></label><br>
+      <input type="checkbox" id="checkbox" name="features" value="blind-spot-detection">
+      <label for="checkbox">Blind Spot Detection</label><br>
+      <input type="checkbox" id="checkbox" name="features" value="rear-cross-traffic-alert">
+      <label for="checkbox">Rear Cross-Traffic Alert</label><br>
+      <input type="checkbox" id="checkbox" name="features" value="power-folding-third-row-seat">
+      <label for="checkbox">Power Folding Third-Row Seat</label><br>
+      <input type="checkbox" id="checkbox" name="features" value="remote-starter">
+      <label for="checkbox">Remote Starter</label><br>
+      <input type="checkbox" id="checkbox" name="features" value="text-messaging-assistant">
+      <label for="checkbox">Text Messaging Assistant</label><br>
+      <input type="checkbox" id="checkbox" name="features" value="around-view">
+      <label for="checkbox">Around View</label><br>
+      <label for="textarea" id="textarea"><strong>Additional Comments</strong></label><br>
+      <textarea id="textarea" name="instructions" rows="8" cols="30"></textarea><br>
+      <input type="submit" class="submit-button" value="Place Order" align="center">
+      </div>
+    </form>
+  </body>
+</html>
